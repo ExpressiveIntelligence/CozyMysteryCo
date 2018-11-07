@@ -5,7 +5,7 @@ let worldSettings = {
 		room: 3,
 		character: 4
 	},
-	
+
 	rules:  '',
 
 	// What someone/something is, always
@@ -66,7 +66,7 @@ let worldSettings = {
 // Load rules from separate ASP file
 
 $.ajax({
-   	url: "js/murderhouse/aspprogram.lp",
+   	url: "asp/rules.lp",
    	success: function(text) {
    		worldSettings.rules = text;
     },
