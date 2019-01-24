@@ -1,4 +1,3 @@
-
 personID("Bob",value(1),value(2)).
 personID("Cindy",value(1),value(3)).
 personID("Bob2",value(2),value(3)).
@@ -15,11 +14,12 @@ personID("Bob7",value(3),value(6)).
 personID("Cindy7",value(4),value(6)).
 personID("Cindy8",value(5),value(6)).
 
-relationship("siblings", undirected).
+relationship("sibling_of", undirected).
 relationship("secret_crush", directed).
 relationship("dating", undirected).
 relationship("loathes", directed).
 relationship("holds_grudge", directed).
+relationship("friend_of", undirected).
 
 relationship("coauthors", undirected).
 relationship("working_for", directed).
@@ -35,3 +35,9 @@ profession("groundskeeper").
 profession("psychic").
 profession("reporter").
 profession("skier").
+profession("astronomer").
+
+modifier("is_rich").
+modifier("is_dying").
+modifier("has_funding").
+modifier("has_theory_about_astronomical_event").
