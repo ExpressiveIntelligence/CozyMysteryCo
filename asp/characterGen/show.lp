@@ -3,5 +3,6 @@
 #show has_profession/2.
 #show has_modifier/2.
 #show personality/3.
-#show has_opinion/3.
-peopleCount(4).
+%#show has_opinion/3.
+#show modifier_count/1.
+peopleCount(10).
