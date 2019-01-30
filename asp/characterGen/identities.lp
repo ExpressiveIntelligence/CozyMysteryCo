@@ -11,44 +11,53 @@ personID("John").
 personID("Kate").
 personID("Louis").
 
-%relationship("sibling_of", undirected).
-%relationship("secret_crush", directed).
-%relationship("dating", undirected).
-%relationship("exes", undirected).
-%relationship("loathes", directed).
-%relationship("admires", directed).
-%relationship("protective_of", directed).
-%relationship("holds_grudge", directed).
-%relationship("friend_of", undirected).
+relationship("coauthors", undirected,professional).
+relationship("working_for", directed,professional).
+relationship("mutual_rivals", undirected,professional).
+relationship("rivals", directed,professional).
+relationship("mentor_of", directed,professional).
+relationship("professor_of", directed,professional).
 
-relationship("coauthors", undirected).
-relationship("working_for", directed).
-relationship("mutual_rivals", undirected).
-relationship("rivals", directed).
-relationship("mentor_of", directed).
-relationship("professor_of", directed).
+relationship("secret_crush", directed,romantic).
+relationship("dating", undirected,romantic).
+relationship("exes", undirected,romantic).
+
+relationship("sibling_of", undirected,family).
+relationship("married", undirected,family).
 
 opinion("likes").
 opinion("neutral").
 opinion("dislikes").
 
-profession("professor").
-profession("student").
-profession("observatory_caretaker").
-profession("groundskeeper").
-profession("psychic").
-profession("reporter").
-profession("skier").
-profession("astronomer").
-profession("volunteer").
-profession("high schooler").
+profession("professor",2).
+profession("student",4).
+profession("observatory_caretaker",1).
+profession("groundskeeper",1).
+profession("psychic",1).
+profession("reporter",1).
+profession("skier",2).
+profession("astronomer",2).
+profession("volunteer",1).
+profession("high schooler",1).
+profession("giftshopkeep",1).
+profession("security",1).
+profession("tourist",1).
+profession("tour guide",1).
+profession("archivist",1).
 
-modifier("is_rich").
-modifier("in_debt").
-modifier("is_dying").
-modifier("has_funding").
-modifier("has_theory_about_astronomical_event").
-modifier("is_secretly_right_about_the_science").
+modifier("is_rich",1).
+modifier("in_debt",1).
+modifier("is_dying",1).
+modifier("is_important_online",1).
+modifier("celebritiy_status",1).
+modifier("outsider",1).
+modifier("secret_expert",1).
+modifier("in_hiding",1).
+modifier("has_funding",1).
+modifier("has_theory_about_astronomical_event",2).
+modifier("is_secretly_right_about_the_science",1).
+modifier("protective_of_observatory",2).
+modifier("hates_this_place",1).
 
 trope(X) :- primarytrope(X).
 
