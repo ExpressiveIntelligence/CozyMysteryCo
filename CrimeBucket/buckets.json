@@ -1,0 +1,12 @@
+
+{
+	"crime" : ["sabotoge #equipment#", "sabotoge experiment", "stole food",  "falsify data", "murder", 
+               "p-hacking", "insulted someone", "excluded someone", "abusing authority", "Prom Week'd",
+               "harassment", "injury", "imprisonment", "mock beliefs", "questioning authority", "make mess",
+               "beaurucratic obstruction", "job sniping", "grant sniping"],
+    "equipment" : ["computer", "tool", "print-outs"],
+    "motivations" : ["response to crime", "accidental", "blackmail", "removing witness", "paranoia", "regain stability",
+                     "assert authority", "self sabotoge", "impress someone", "helicopter figure", "misunderstanding",
+                     "Don Quixote", "eliminate distractions", "avoiding someone", "preemptive caution", "apathy",
+                     "lack of concern"],
+}
