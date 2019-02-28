@@ -2,11 +2,25 @@
 {
 	"crime" : ["sabotoge #equipment#", "sabotoge experiment", "stole food",  "falsify data", "murder", 
                "p-hacking", "insulted someone", "excluded someone", "abusing authority", "Prom Week'd",
-               "harassment", "injury", "imprisonment", "mock beliefs", "questioning authority", "make mess",
-               "beaurucratic obstruction", "job sniping", "grant sniping"],
+               "harassment", "injury", "imprisonment", "mock beliefs", "undermine authority", "make mess",
+               "beaurucratic obstruction", "job sniping", "grant sniping", "theft", "burn-out", "arson"],
     "equipment" : ["computer", "tool", "print-outs"],
     "motivations" : ["response to crime", "accidental", "blackmail", "removing witness", "paranoia", "regain stability",
                      "assert authority", "self sabotoge", "impress someone", "helicopter figure", "misunderstanding",
                      "Don Quixote", "eliminate distractions", "avoiding someone", "preemptive caution", "apathy",
                      "lack of concern"],
+    "evidence" : ["#physical_evidence#", "#digital_evidence#", "#social_evidence#"],
+    "physical_evidence" : ["#against_person_object#", "#weapons#", "#clutter#"],
+    "against_person_object" : ["damage to a person/object", "remains of a person/object"],
+    "weapons": ["Evidence of Violent Use on a weapon", "weapon has a known owner"],
+    "clutter": ["clutter used to hide something", "clutter as negilence", "clutter as the result of a struggle"],
+    "physical_modifiers": ["damaged", "misplaced", "hidden"],
+    "digital_evidence": ["#data#", "#communications#", "#security#"],
+    "data": ["internally incosistent digital data", "externally incosistent digital data","internally incosistent physical data", "externally incosistent physical data"]
+    "communications": ["deleted email", "undeleted email", "missent email", "forged email"],
+    "security": ["forged credentials", "data access records", "data edit records"],
+    "social_evidence": ["#witnessing#", "#inferring#", "#rumors#", "evidence of use as proxy"],
+    "witnessing": ["eyewitness", "ear-witness"],
+    "inferring": ["unusual behavoir", "lack of alibi", "obstruction"],
+    "rumors": ["rumor as a crime", "rumor as evidence"]
 }

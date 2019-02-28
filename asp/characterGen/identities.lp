@@ -25,6 +25,8 @@ relationship("exes", undirected,romantic).
 relationship("sibling_of", undirected,family).
 relationship("married", undirected,family).
 
+r_ship_names(N) :- relationship(N,_,_).
+
 opinion("likes").
 opinion("neutral").
 opinion("dislikes").
@@ -100,3 +102,12 @@ trope("Imposter/Pretender").
 trope("Side Kick").
 trope("Astrology Buff").
 trope("Socially Awkward/Misses Cues").
+
+value("Science").
+value("Survival").
+value("Communalism").
+value("Funding").
+value("Comfort").
+value("Order").
+value("Faith").
+value("Progress").
